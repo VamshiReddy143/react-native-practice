@@ -6,6 +6,12 @@ import clsx from "clsx";
 import { Image } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
+import { ImageSourcePropType } from "react-native";
+
+interface TabIconProps {
+  focused: boolean;
+  icon: ImageSourcePropType;
+}
 
 const tabBar = components.tabBar;
 const TabLayout = () => {
